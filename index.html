@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Y4R Store — Premium Local Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/home.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="images/logo.png" class="logo" alt=""> Y4R <span>Store</span></a>
+    <nav class="main-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="product.html">Shop</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cartBadge">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero container">
+  <div class="hero-card">
+    <h1>Premium local products, curated for you.</h1>
+    <p>Discover quality picks from your neighborhood — stylish, useful, and built to last.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="product.html">Start Shopping</a>
+      <a class="btn ghost" href="cart.html">View Cart</a>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+  <h2 class="section-title">Featured Products</h2>
+  <section id="featuredGrid" class="grid"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© 2025 Y4R Store • Built by Yaswanth</p></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Render top 4 items as "featured"
+  Y4R.loadProducts().then(list => {
+    const top = [...list].sort((a,b)=>b.rating-a.rating).slice(0,4);
+    Y4R.renderCards(document.getElementById('featuredGrid'), top, { showView:true, showAdd:true });
+  });
+</script>
+</body>
+</html>

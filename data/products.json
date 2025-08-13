@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Developer Desk Set",
+    "price": 1299,
+    "category": "Home & Office",
+    "rating": 4.8,
+    "stock": 12,
+    "image": "images/Coffee Mug.jpg",
+    "desc": "Minimal desk setup with laptop stand — perfect for a clean workspace."
+  },
+  {
+    "id": 2,
+    "name": "Vintage Street Tee",
+    "price": 699,
+    "category": "Apparel",
+    "rating": 4.4,
+    "stock": 22,
+    "image": "images/Electronics.jpg",
+    "desc": "Soft cotton T-shirt inspired by street photography aesthetics."
+  },
+  {
+    "id": 3,
+    "name": "Handmade Ceramic Mug",
+    "price": 349,
+    "category": "Kitchen",
+    "rating": 4.6,
+    "stock": 18,
+    "image": "images/Mug.jpg",
+    "desc": "Textured ceramic mug — barista approved for daily brews."
+  },
+  {
+    "id": 4,
+    "name": "Designer Tote Bag",
+    "price": 899,
+    "category": "Accessories",
+    "rating": 4.5,
+    "stock": 15,
+    "image": "images/HeadPhone.jpg",
+    "desc": "Durable everyday carry tote with premium stitching."
+  },
+  {
+    "id": 5,
+    "name": "Stylish Bag-White",
+    "price": 1499,
+    "category": "Bag",
+    "rating": 4.7,
+    "stock": 9,
+    "image": "images/Stylish Bag-White.jpg",
+    "desc": "Warm ambient glow — elevate your night desk sessions."
+  },
+  {
+    "id": 6,
+    "name": "Modern Shelf Decor",
+    "price": 599,
+    "category": "Home & Office",
+    "rating": 4.3,
+    "stock": 20,
+    "image": "HeadPhone.jpg",
+    "desc": "Handpicked decor pieces for a premium minimalist look."
+  },
+  {
+    "id": 7,
+    "name": "Stylish Bag",
+    "price": 279,
+    "category": "Bag",
+    "rating": 4.2,
+    "stock": 26,
+    "image": "images/Stylish Bag.jpg",
+    "desc": "Low-maintenance cactus in a compact planter."
+  },
+  {
+    "id": 8,
+    "name": "Hand Bag",
+    "price": 499,
+    "category": "Bag",
+    "rating": 4.1,
+    "stock": 30,
+    "image": "images/JuteBag.jpg",
+    "desc": "Matte art print for creative workspaces."
+  }
+]

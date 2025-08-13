@@ -1,0 +1,76 @@
+:root{
+  --container:1100px;
+  --bg:#0b1220;
+  --panel:#101a33;
+  --muted:#9fb3c8;
+  --text:#eaf4ff;
+  --accent:#00d1ff;
+  --gold:#ffd54a;
+  --ring: rgba(0,209,255,.35);
+}
+*{box-sizing:border-box} html,body{margin:0}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#0b1220,#0a1426);color:var(--text)}
+img{max-width:100%;display:block}
+.container{width:92%;max-width:var(--container);margin:0 auto}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(7,14,30,.6);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:800;color:#fff;text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand span{color:var(--gold)}
+.logo{height:28px}
+.main-nav{display:flex;gap:18px;align-items:center}
+.main-nav a{color:var(--text);text-decoration:none;padding:8px 12px;border-radius:10px}
+.main-nav a:hover,.main-nav a.active{color:var(--accent);background:rgba(255,255,255,.04)}
+.cart-link #cartBadge{background:var(--gold);color:#111;border-radius:999px;padding:2px 7px;margin-left:6px;font-size:.8rem}
+
+/* buttons */
+.btn{display:inline-block;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:700;cursor:pointer}
+.btn.primary{background:var(--gold);color:#111;border:none}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.15)}
+.btn:focus{outline:2px solid var(--ring);outline-offset:2px}
+
+/* hero */
+.hero{margin-top:18px}
+.hero-card{background:radial-gradient(1200px 400px at 10% 0%, rgba(0,209,255,.15), transparent), linear-gradient(180deg,#121b37,#0d1733);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:34px;box-shadow:0 20px 50px rgba(2,6,23,.38)}
+.hero-card h1{font-size:2.2rem;margin:0 0 .5rem}
+.hero-card p{color:var(--muted);margin:0 0 1rem}
+.hero-actions{display:flex;gap:10px}
+
+/* section title */
+.section-title{margin:24px 0 10px}
+
+/* grid cards */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:18px 0 30px}
+.card{background:linear-gradient(180deg,#101a36,#0e1833);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;box-shadow:0 10px 28px rgba(2,6,23,.2);transform:translateY(0);transition:transform .25s ease, box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(2,6,23,.32)}
+.card-body{padding:12px}
+.card h3{margin:.4rem 0}
+.price{font-weight:800;color:#eaff7a}
+.muted{color:var(--muted);font-size:.95rem}
+.badge{background:rgba(255,255,255,.08);padding:2px 8px;border-radius:999px;font-size:.8rem}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:10px;padding:18px;background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;margin:18px auto}
+.filters input,.filters select{background:rgba(255,255,255,.04);color:var(--text);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:10px 12px;outline:none}
+.filters .price-range{display:flex;align-items:center;gap:8px;margin-left:auto}
+
+/* product page shared bits */
+.product-container{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin:22px 0}
+.product-panel{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:16px}
+.product-price{font-size:1.6rem;color:#eaff7a;font-weight:800;margin:8px 0}
+
+/* cart */
+.cart-table{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:12px;margin-top:12px}
+.cart-row{display:grid;grid-template-columns:64px 1fr 120px 150px 40px;gap:10px;align-items:center;padding:10px;border-bottom:1px solid rgba(255,255,255,.06)}
+.cart-row img{height:64px;width:64px;object-fit:cover;border-radius:8px}
+.cart-summary{display:flex;align-items:center;justify-content:space-between;background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:16px;margin:16px 0}
+.total{font-size:1.2rem}
+
+/* footer */
+.site-footer{padding:16px 0;border-top:1px solid rgba(255,255,255,.06);margin-top:30px;text-align:center}
+
+/* responsive */
+@media (max-width: 1100px){ .grid{grid-template-columns:repeat(3,1fr)} .product-container{grid-template-columns:1fr}}
+@media (max-width: 780px){ .grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width: 520px){ .grid{grid-template-columns:1fr} .filters{gap:8px} .filters .price-range{width:100%;margin-left:0} }

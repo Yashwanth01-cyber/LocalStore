@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cart • Y4R Store</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/cart.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Y4R <span>Store</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="product.html">Shop</a>
+      <a class="active cart-link" href="cart.html">Cart <span id="cartBadge">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Your Cart</h2>
+  <div id="cartTable" class="cart-table"></div>
+  <div class="cart-summary" id="summary">
+    <div>
+      <p>Subtotal: <strong id="subtotal">₹0</strong></p>
+      <p>Shipping: <strong id="shipping">₹0</strong></p>
+      <p class="total">Total: <strong id="total">₹0</strong></p>
+    </div>
+    <button class="btn primary" id="checkoutBtn">Place Demo Order</button>
+  </div>
+  <div id="orderMsg" class="muted"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© 2025 Y4R Store</p></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

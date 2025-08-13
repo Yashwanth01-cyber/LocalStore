@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Shop • Y4R Store</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/product.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Y4R <span>Store</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="product.html">Shop</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cartBadge">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="section-title">All Products</h2>
+
+  <section class="filters">
+    <input id="q" placeholder="Search products…">
+    <select id="cat"><option value="">All categories</option></select>
+    <select id="sort">
+      <option value="pop">Popular</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+      <option value="rating-desc">Rating: High → Low</option>
+    </select>
+    <div class="price-range">
+      <input id="min" type="number" min="0" placeholder="Min ₹">
+      <span>—</span>
+      <input id="max" type="number" min="0" placeholder="Max ₹">
+      <button id="clear" class="btn ghost">Clear</button>
+    </div>
+  </section>
+
+  <section id="grid" class="grid"></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>© 2025 Y4R Store</p></div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
